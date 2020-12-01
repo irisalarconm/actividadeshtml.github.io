@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>personalizado12</title>
+        <style type="text/css">
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 90%;
+                color: black;
+            }
+            .header {
+                background-color: orange;
+                color: black;
+                margin: auto;
+                justify-content:space-evenly;
+                align-items: center;
+                display: flex;
+                align-items: inherit;
+                padding-left: 20px;
+            }
+            .navegation {
+                margin:auto;
+                display: flex;
+                justify-content: space-evenly;
+                width: 70%;
+            }
+            .page {
+                width: 90%;
+                display: flex;
+                margin: auto;
+                justify-content: space-evenly;
+            }
+            .text_table {
+                width: 60%;
+                margin: auto;
+                background-color: rgb(235, 230, 221);
+                padding-top: 10px;
+                padding-bottom: 20px;
+            }
+            .form {
+                text-align: center;
+                margin: auto;
+            }
+            .introduction {
+                width: 80%;
+                margin: auto;
+            }
+            .introduction h1 {
+                text-align: center;
+            }
+            .text_introduction {
+                width: 50%;
+                margin: auto;
+            }
+            li {
+                list-style-type: square;
+                line-height: 1.6em;
+            }
+            table {
+                border-spacing: 2px;
+                margin: auto;
+            }
+            th,
+            td {
+                padding: 5px 30px 5px 10px;
+                border-spacing: 0px;
+                font-size: 90%;
+                margin: 0px;
+                text-align: left;
+                background-color: #e0e9f0;
+                border-top: 1px solid #f1f8fe;
+                border-bottom: 1px solid #cbd2d8;
+                border-right: 1px solid #cbd2d8;
+            }
+            tr.head th {
+                color: #fff;
+                background-color: black;
+                border-bottom: 3px solid grey;
+                border-right: 2px solid grey;
+                border-top: 2px solid grey;
+                text-align: center;
+                text-shadow: -1px -1px 4px #666666;
+                letter-spacing: 0.15em;
+            }
+            td {
+                text-shadow: 1px 2px 2px #ffffff;
+            }
+            tr.resul td,
+            tr.resul th {
+                background-color: #F7DC6F;
+                color:black;
+            }
+            
+            tr.head th:first-child {
+                -webkit-border-top-left-radius: 5px;
+                -moz-border-radius-topleft: 5px;
+                border-top-left-radius: 5px;
+            }
+            tr.head th:last-child {
+                -webkit-border-top-right-radius: 6px;
+                -moz-border-radius-topright: 6px;
+                border-too-right-radius: 6px;
+            }
+            fieldset {
+                width: 310px;
+                margin-top: 20px;
+                border: 1px solid #d6d6d6;
+                background-color: #ffffff;
+                line-height: 1.6em;
+                margin: auto;
+                padding: 10px;
+            }
+            legend {
+                color: #641E16;
+                padding: 5px;
+            }
+            input[type="text"] {
+                width: 120px;
+                border: 2px solid orange;
+                padding: 2px;
+                outline: none;
+            }
+            input[type="text"]:focus,
+            input[type="text"]:hover {
+                background-color: #d0e2f0;
+                border: 1px solid #999999;
+            }
+
+            input[type="submit"] {
+                border: 1px solid #AAFF00;
+                background-color: #FFEC00;
+                color: black;
+                border-radius: 5px;
+                padding: 5px;
+                margin-top: 10px;
+            }
+
+            input[type="submit"]:hover {
+                border: 2px solid #AAFF00;
+                background-color: orangered;
+                color: #ffffff;
+                cursor: pointer;
+            }
+            .tifie {
+                float: left;
+                width: 160px;
+                clear: left;
+            }
+            .submit {
+                width: 310px;
+                text-align: center;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>RUNNINGPLAY</h1>
+            <ul class="navegation">
+                <li>Inicio</li>
+                <li>Sobre nosotros</li>
+                <li>Eventos</li>
+                <li>Productos</li>
+                <li>Inscribete</li>
+            </ul>
+        </div>
+        <br/>
+        <br/>
+        <div class="page">
+            <div class="text_table">
+                <div class="introduction">
+                    <div class="text_introduction">
+                        <h1>Resultados Carrera Atletica Tapitas</h1>
+                        <p>Evento Internacional realizado entre el 1 y 8 de febrero del 2020</p>
+                        <p>Los resultados son basados en los tiempor marcados por el chip y luego del disparo inicial, se tomaron en cuenta los siguientes items
+                            para cada resultado
+                        </p>
+                        <ul>
+                            <li>Género</li>
+                            <li>Distancia</li>
+                            <li>Edad</li>
+                        </ul>
+                    </div>
+                </div>        
+                <table>
+                    <tr class="head">
+                            <th></th>
+                            <th>GÉNERO</th>
+                            <th>DISTANCIA</th>
+                            <th>EDAD</th>
+                            <th>TIEMPO</th>
+                    </tr>
+                    <tr class="resul">
+                        <th>Daniela Rodriguez</th>
+                        <td>Femenino</td>
+                        <td>10K</td>
+                        <td>25</td>
+                        <td>00:52:48</td>
+                    </tr>
+                    <tr class="resul">
+                        <th>Jair Quintero</th>
+                        <td>Masculino</td>
+                        <td>21K</td>
+                        <td>32</td>
+                        <td>01:48:03</td>
+                    </tr>
+                    <tr class="resul">
+                        <th>Julian Ruiz</th>
+                        <td>Masculino</td>
+                        <td>10K</td>
+                        <td>27</td>
+                        <td>00:45:28</td>
+                    </tr>
+                    <tr class="resul">
+                        <th>Jorge Oviedo</th>
+                        <td>Masculino</td>
+                        <td>42K</td>
+                        <td>37</td>
+                        <td>02:45:59</td>
+                    </tr>
+                    <tr class="resul">
+                        <th>Paula Gomez</th>
+                        <td>Femenino</td>
+                        <td>42K</td>
+                        <td>24</td>
+                        <td>02:57:38</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form">
+            <form action="#" method="get">
+                <fieldset>
+                    <legend><strong>Inquietudes o quejas</strong></legend>
+                        <label class="title" for="name">Nombre:</label>
+                        <input type="text" name="name" id="name"><br/><br/>
+                        <label class="title" for="email">Correo:</label>
+                        <input type="text" name="email" id="phone"><br/><br/>
+                        <label class="title" for="phone">Celular:</label>
+                        <input type="text" name="phone" id="phone"></p>
+                        <label for="location" class="title">Elija como quiere que le comuniquemos:</label><br/>
+                            <select name="communication" id="communication">
+                                <option value="ny">Correo</option>
+                                <option value="il">Celular</option>
+                                <option value="ca">Iré a un centro de atención</option>
+                            </select></p>
+                            <span class="title">¿Desea recibir publicidad de nuestro proximos eventos?</span><br/>
+                            <label><input type="radio" name="member" value="yes" /> SI</label>
+                            <label><input type="radio" name="member" value="no" /> NO </label></p>
+                </fieldset>
+                <div class="submit"><input type="submit" value=”Enviar” /></div>
+            </form>
+            </div>
+        </div>
+    </body>
+
+</html>

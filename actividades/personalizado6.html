@@ -1,0 +1,65 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-18">
+        <title>Mi formulario</title>
+        <style type="text/css">
+            .form {
+                background-color: #BA4A00;
+                width: 70%;
+                margin: auto;
+                padding: 20px;
+                text-align: center;
+            }
+            input {
+                border: 2px solid #BA4A00;
+                background-color: #e7aa80;
+            }
+        </style>
+    </head>
+    <body>
+            <form action="#" method="post" class="form">
+                <fieldset>
+                    <legend><b>Ingrese sus datos</b></legend>
+                    <label>Nombre: <input type="text" name="name"/></label><br/><br/>
+                    <label>Email: <input type="text" name="Email"/></label><br/><br/>
+                    <label>Telefono: <input type="text" name="phone"/></label><br/><br/>
+                    <label>Celular: <input type="text" name="cellphone"/></label><br/><br/>
+                    <label>Profesión: <input type="text" name="profession"/></label><br/><br/>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Opina sobre nosotros</b></legend>
+                    <br/>
+                    <label>¿Cómo te enteraste de nosotros?</label>
+                    <select name="we">
+                        <option value="Google">Google</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Recomendacion">Recomendación</option>
+                    </select>
+                    <br/><br/>
+                    <label>¿Te gusto la charla?
+                        <br/>
+                        <input type="radio" name="visit" value="yes" checked="checked"/> Sí
+                        <input type="radio" name="visit" value="no"/> No
+                        <input type="radio" name="visit" value="maybe"/> Quizas
+                    <br/><br/>
+                    <label>¿De 1 a 5 como te sentiste?
+                        <br/>
+                        <input type="radio" name="visit" value="1" checked="checked"/> 1
+                        <input type="radio" name="visit" value="2"/> 2
+                        <input type="radio" name="visit" value="3"/> 3
+                        <input type="radio" name="visit" value="4"/> 4
+                        <input type="radio" name="visit" value="5"/> 5
+                    </label>
+                    <br/><br/>
+                    <label>Cuentanos lo que quieras</label><br><textarea name="comments" cols="40" rows="9"></textarea>
+                    <br/><br/>
+                    <input type="Checkbox" name="Inscription" value="Inscribete" checked="checked"/> 
+                    Inscribite para más charlas e invitaciones por correo electronico.<br/><br/>
+                    <input type="submit" name="subscribe" value="Send My Opinion"/>
+                </fieldset>
+            </form>
+    </body>
+</html>
+<!-- </ins>-->
