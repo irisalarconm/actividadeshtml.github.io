@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 035</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            let h, m, s;
+            h=prompt('Hora: ');
+            h=parseInt(h);
+            m=prompt('Minuto: ');
+            m=parseInt(m);
+            s=prompt('Segundo: ');
+            s=parseInt(s);
+
+            s+=1;
+                if(s==60){
+                    s = 0;
+                    m+=1;
+                    if(m==60){
+                        m = 0;
+                        h+=1;
+                        if(h==24){
+                            h=0
+                        }
+                    }
+                }
+            alert('Hora: ' + h +
+            '\nMinuto: ' + m +
+            "\nSegundo: " + s); //pos no sirve
+        </script>
+    </head>
+    <body>
+        <p>Parrafo ejercicio 035</p>
+        <p>Programa en javascript para calcular la hora del siguiente
+            segundo a partir de la hora, minuto y segundo ingresada.
+        </p>
+    </body>
+</html>

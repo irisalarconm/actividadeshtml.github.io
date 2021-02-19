@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 040</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            let nota = prompt("Introduzca una nota de 0 y 10: ");
+            nota = parseInt(nota);
+
+            if(nota < 0 || nota > 10){
+                alert("Nota no valida");
+            }else if(nota == 10){
+                alert("Matricula de Honor");
+            }else if(nota>= 9){
+                alert("Sobresaliente");
+            }else if(nota >= 7){
+                alert("Notable");
+            }else if(nota >=6){
+                alert("Bien");
+            }else if(nota >=5){
+                alert("Suficiente");
+            }else{
+                alert("Suspenso")
+            }
+        </script>
+    </head>
+    <body>
+        <p>Parrafo ejercicio 040</p>
+        <p>Programa en javascript para determinar el valor de una nota
+        </p>
+    </body>
+</html>

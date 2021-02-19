@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 038</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            let valor_servicio=prompt("Ingrese el valor del servicio: ");
+            valor_servicio=parseFloat(valor_servicio);
+            let total = parseFloat(total);
+            let n = parseInt(n);
+            if(valor_servicio < 5000){
+                alert("USTED NO TIENE DESCUENTO, EL VALOR A PAGAR ES: " + valor_servicio);
+                }else if(valor_servicio >= 5000 && valor_servicio<10000){
+                alert("USTED POSEE UN DESCUENTO DEL 15%, EL VALOR A PAGAR ES " + (valor_servicio - (valor_servicio*0.15)));
+                }else if(valor_servicio >= 10000){
+                alert("USTED POSEE UN DESCUENTO DEL 25%, EL VALOR A PAGAR ES: " + (valor_servicio - (valor_servicio*0.25)));
+                }
+        </script>
+    </head>
+    <body>
+        <p>Parrafo ejercicio 038</p>
+        <p>Programa en javascript para determinar el descuento al ingresar un valor a pagar
+        </p>
+    </body>
+</html>

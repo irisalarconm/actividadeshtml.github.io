@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Exercise 034</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            //NO COMPRENDER ESTE.
+            let a, b, c;
+            let discri;
+            let x1, x2;
+
+            a=prompt("Escribe el coeficiente de la x^2", '');
+            a=parseFloat(a);
+            b=("Escribe el coeficiente de la x", '');
+            b=parseFloat(b);
+            c=("Escribe el termino independiente", '');
+            c=parseFloat(c);
+            discri=Math.pow(b, 2.0) - 4.0 * a * c;
+
+            if(discri<0)
+                alert('Soluciones Imaginarias');
+                if(discri==0){
+                    x1=-b(2*a);
+                    alert('Solución doble que es '+ x1);
+                }
+                if(discri>0){
+                    x1=(-b+Math.sqrt(discri))/(2*a);
+                    x2=(-b-Math.sqrt(discri))/(2*a);
+                    alert('Las soluciones son = ' + x1 + 'y' +x2);
+                }
+        </script>
+    </head>
+    <body>
+        <p>Parrafo ejercicio 034</p>
+        <p>Programa en javascript para resolver la ecuación de
+            segundo grado: ax2 + bx + c = 0
+        </p>
+    </body>
+</html>

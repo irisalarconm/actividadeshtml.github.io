@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 026</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            let n1=0,n2=0,n3=0,m=0;
+                n1=prompt("Ingrese el numero 1: ");
+                n2=prompt("Ingrese el numero 1: ");
+                n3=prompt("Ingrese el numero 1: ");
+                n1=parseInt(n1);
+                n2=parseInt(n2);
+                n3=parseInt(n3);
+
+                if(n1>n2){
+                    if(n1>n3){
+                        m=n1;
+                    }else{
+                        m=n3;
+                    }
+                }else{
+                    if(n2>n3){
+                        m=n2;
+                    }else{
+                        m=n3;
+                    }
+                }
+                alert("El numero mayor es: " + m);
+        </script>
+    </head>
+    <body>
+        <p>Parrafo ejercicio 026</p>
+        <p>Programa en javascript para comparar tres numero y devolver el numero de mayor valor
+        </p>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 028</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            let n1, n2, n3, mayor, inter, menor;
+            n1=prompt("Ingrese el numero 1: ");
+            n2=prompt("Ingrese el numero 2: ");
+            n3=prompt("Ingrese el numero 3: ");
+            n1=parseInt(n1);
+            n2=parseInt(n2);
+            n3=parseInt(n3);
+            //ingrese 22 89 y 47: ¿what's up?
+            if(n1 > n2 && n1 > n3){
+                mayor = n1;
+            }else{
+                if(n2 > n1 && n2 > n3){
+                    mayor = n2;
+                }else{
+                    mayor = n3;
+                }
+            }
+            if(n1 < n2 && n1 < n3){
+                menor=n2;
+            }else{
+                if(n2 < n1 && n2 < n3){
+                    menor = n2;
+                }else{
+                    menor=n3;
+                }
+            }
+            inter=(n1+n2+n3)-(mayor + menor);
+            alert("El numero mayor es: " + mayor + "\nEl numero intermedio es: "+ inter +
+            "\nEl numero menor es: " + menor);
+        </script>
+    </head>
+    <body>
+        <p>Parrafo ejercicio 028</p>
+        <p>Programa en javascript para comparar tres numero y devolver el numero 
+            de mayor valor.
+        </p>
+    </body>
+</html>

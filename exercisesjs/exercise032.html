@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 032</title>
+        <meta charset="UTF-8">
+        <script lang="javascript" type="text/javascript">
+            let DESC_G = 0.15; DESC_G.toFixed(2);
+            let DESC_A = 0.2; DESC_A.toFixed(2);
+            let REC_G = 0.1; REC_G.toFixed(2);
+            let REC_A = 0.05; REC_A.toFixed(2);
+            let mc, m=0, tp=0;
+
+            mc=prompt("Ingrese el manto de la compra: ");
+            mc = parseFloat(mc);
+            m=parseFloat(m);
+            tp=parseFloat(m);
+            
+            let tc, fp, r;
+            tc = prompt("Tipo de cliente G general o A afiliado: ");
+            fp = prompt("Forma de pago C credito E efectivo: ");
+
+            if(tc=='G' || tc == 'g'){
+                if(fp=='C' || fp == 'c'){
+                    m = mc*DESC_G;
+                    tp = mc - m;
+                    r = "DESCUENTO 15%";
+                }else{
+                    m=mc * REC_G;
+                    tp = mc + m;
+                    r="RECARGO 10%"
+                }
+            }else{
+                if(fp == 'C' || fp == 'c'){
+                    m = mc * DESC_A;
+                    tp = mc - m;
+                    r = "DESCUENTO 20%";
+                }else{
+                    m = mc* REC_A;
+                    tp = mc + m;
+                    r = "RECARGO 5%";
+                }
+            }
+            alert(r + ": " + m + "\nTotal a pagar: " + tp);
+        </script>
+    </head>
+    <body>
+        <p>Parrafo ejercicio 032</p>
+        <p>Programa en javascript para ingresar una compra y dependiendo del monto obtener un descuento,
+            o un recargo. <br/>
+            Cliente general 15% - recargo 10%<br/>
+            Cliente Afiliado 20% - recargo 5%.<br/>
+
+        </p>
+    </body>
+</html>
